@@ -9,7 +9,7 @@ render_home_header()
 st.write(
     "This proof-of-concept is built by Hugo Li together with Cursor (an agentic AI tool). "
     "It explores some state-of-the-art design principles for learning analytics dashboards "
-    "(LAD) — adaptive for teacher agency, encouraging students' self-regulated learning "
+    "(LAD): adaptive for teacher agency, encouraging student self-regulated learning "
     "(SRL), subject-domain-specific considerations, and honest limits on what clickstream "
     "data cannot say. Beyond that, based on Hugo Li's former fieldwork, master's studies, "
     "and doctoral research, it tries to apply critical theories from the history and "
@@ -53,8 +53,10 @@ with st.expander("B. Teacher community of practice", expanded=True):
     st.caption(
         "Reframes 'cross-teacher alert' (a surveillance pattern) into multi-stakeholder "
         "dialogue (Tinto 1993 academic+social integration; Wenger 1998 communities of "
-        "practice). The student-present check is a deliberate ethical constraint. "
-        "Hugo Li's doctoral research likewise emphasises teacher networking and professional "
+        "practice). The student-present check is a deliberate ethical constraint "
+        "(Slade & Prinsloo 2013 on LA ethical dilemmas; Prinsloo & Slade 2014 on "
+        "intrusion, surveillance, and care). Hugo Li's doctoral research in the history "
+        "of education reform likewise emphasises teacher networking and professional "
         "community as drivers of individual development.",
     )
 

@@ -14,7 +14,7 @@ Explores **teacher agency**, **communities of practice**, and **student data aut
 
 1. **Adaptive LA for teacher agency (and digital capability)** — Three collapsible info groups (What is / What's behind / What next) plus a **Hide model predictions** toggle. *Anchors: Lapage, Crabbé, & Depaepe (2026) on adaptable dashboards that support instructional autonomy; Van Leeuwen & Rummel (2020) on division of responsibility in advisory mode; Depaepe-style deliberate non-use.*
 
-2. **Teacher community of practice** — Case conferences and a peer timeline replace cross-teacher “alert” surveillance; students must be informed and may attend. *Anchor: Tinto (1993); Wenger (1998). Hugo Li's doctoral research likewise emphasises teacher networking and professional community as drivers of individual development.*
+2. **Teacher community of practice** — Case conferences and a peer timeline replace cross-teacher “alert” surveillance; students must be informed and may attend. *Anchors: Tinto (1993); Wenger (1998); Slade & Prinsloo (2013); Prinsloo & Slade (2014) on intrusion, surveillance, and care. Hugo Li's doctoral research in the history of education reform likewise emphasises teacher networking and professional community as drivers of individual development.*
 
 3. **Student data-erasure as pedagogical right** — Students see which data categories were cleared and what is retained, then start fresh without model charts or percentiles; teachers are notified and can preview model consequences in **Data erasure (educator view)** on BBB/DDD pages. *Anchors: Masschelein & Simons (2013) scholè; Simons & Masschelein (2021) on the right to begin anew free from algorithmic persona; GDPR-style data-subject rights as pedagogical principle.*
 
