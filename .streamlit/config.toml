@@ -1,3 +1,7 @@
+[client]
+# Hide Deploy button and other developer toolbar items for all viewers (incl. on Cloud).
+toolbarMode = "viewer"
+
 [theme]
 primaryColor = "#0071e3"
 backgroundColor = "#ffffff"
