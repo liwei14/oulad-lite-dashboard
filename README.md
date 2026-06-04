@@ -31,6 +31,8 @@ streamlit run app/Home.py
 
 Symlink the seven OULAD CSVs under `data/raw/` (see project setup). Interim parquets under `data/interim/` are produced by the data-loader and feature pipeline (Steps 2–3).
 
+**Streamlit Cloud:** use `.python-version` (3.11) and the pinned `requirements.txt`; regenerate `outputs/model_artifacts.joblib` with the same stack (e.g. `.venv311` + `train_models`) before pushing.
+
 ## Honest limitations
 
 - **Day-28 features only** — the model never sees behaviour or assessments after week 4.
