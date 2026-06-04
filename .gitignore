@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+
+# Optional analysis outputs (not needed at runtime on Streamlit Cloud)
+outputs/*.png
+outputs/*.html
+
+# 433 MB raw clickstream — do not commit; app uses data/interim/clickstream_*.parquet
+data/raw/studentVle.csv
+
+# Parquet elsewhere ignored; deploy interim set is tracked
+*.parquet
+!data/interim/
+!data/interim/*.parquet
+
+# Joblib dumps ignored except the trained model bundle
+outputs/*.joblib
+!outputs/model_artifacts.joblib
