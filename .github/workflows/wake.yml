@@ -1,0 +1,31 @@
+name: Wake Streamlit App
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+
+jobs:
+  wake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install selenium
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          install-chromedriver: true
+
+      - name: Wake up Streamlit app
+        env:
+          STREAMLIT_URL: ${{ secrets.STREAMLIT_URL }}
+        run: python scripts/wake_streamlit.py
