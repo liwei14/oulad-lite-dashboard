@@ -1,12 +1,13 @@
 import os
-import time
 
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
 
 WAKE_BUTTON_XPATH = "//button[contains(., 'Yes, get this app back up')]"
 APP_READY_XPATH = "//div[@data-testid='stAppViewContainer']"
@@ -20,7 +21,10 @@ def wake_app() -> None:
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
 
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()),
+        options=options,
+    )
 
     try:
         print(f"访问: {url}")
